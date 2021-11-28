@@ -68,7 +68,7 @@ Cuando estos datos cambian, la vista volverá a renderizarse. Es preciso señala
 vm.b = 'hola'
 ```
 
-Entonces los cambios de `b` no producirán ninguna actualización en la vista. Si sabe que necesitará una propiedad más adelante, pero comienza vacía o inexistente, necesitará setear un valor inicial. Por ejemplo:
+Entonces los cambios de `b` no producirán ninguna actualización en la vista. Si sabe que necesitará una propiedad más adelante, pero comienza vacía o inexistente, necesitará establecer un valor inicial. Por ejemplo:
 
 ```js
 data: {
