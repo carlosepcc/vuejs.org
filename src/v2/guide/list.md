@@ -353,7 +353,7 @@ Object.assign(vm.userProfile, {
   favoriteColor: 'Vue Green'
 })
 ```
-Puedria agregar nuevas propiedades reactivas con:
+Podría agregar nuevas propiedades reactivas con:
 
 ``` js
 vm.userProfile = Object.assign({}, vm.userProfile, {
@@ -512,7 +512,7 @@ Aquí hay un ejemplo completo de una lista de tareas simple:
   </ul></div>
   ```
 
-<p class="tip">Note el atributo `is = "todo-item"`. Esto es necesario en las plantillas DOM, porque solo un elemento `<li>` es válido dentro de un `<ul>`. Hace lo mismo que `<todo-item>`, pero funciona alrededor de un error potencial de análisis del navegador. Ver las [advertencias de análisis de plantillas DOM](components.html#Cuidados-en-Parseo-de-Plantillas-DOM) aprender más.</p>
+<p class="tip">Note el atributo `is = "todo-item"`. Esto es necesario en las plantillas DOM, porque solo un elemento `<li>` es válido dentro de un `<ul>`. Hace lo mismo que `<todo-item>`, pero evita un error potencial de análisis del navegador. Ver las [advertencias de análisis de plantillas DOM](components.html#Cuidados-en-Parseo-de-Plantillas-DOM) aprender más.</p>
 
 ``` js
 .component('todo-item', {
