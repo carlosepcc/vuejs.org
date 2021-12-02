@@ -206,7 +206,7 @@ A diferencia de los otros modificadores, que son exclusivos de los eventos DOM n
 
 > Nuevo in 2.3.0+
 
-Vue también ofrece el modificador `.passive`, correspondiente a [la opción `pasiva` de `addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Parameters).
+Vue también ofrece el modificador `.passive`, correspondiente a [la opción `passive` de `addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Parameters).
 
 ``` html
 <!-- El comportamiento predeterminado del evento scroll (scrolling) sucederá -->
@@ -248,7 +248,7 @@ Aqui esta la lista completa de alias:
 - `.left`
 - `.right`
 
-También puede [definir alias modificadores de tecla personalizados](../api/#keyCodes) a través del objeto global `config.keyCodes`:
+También pueden [definir alias modificadores de tecla personalizados](../api/#keyCodes) a través del objeto global `config.keyCodes`:
 
 ``` js
 // habilita `v-on:keyup.f1`
@@ -290,7 +290,7 @@ Por ejemplo:
 <!-- Ctrl + Click -->
 <div @click.ctrl="doSomething">Do something</div>
 ```
-<p class="tip">Tenga en cuenta que las teclas modificadoras son diferentes de las teclas normales y cuando se usan con eventos `keyup`, deben presionarse cuando se emite el evento. En otras palabras, `keyup.ctrl` solo se activará si sueltas una tecla mientras mantienes presionada la tecla `Ctrl`. No se activará si suelta la tecla `ctrl` solo. Si desea tal comportamiento, use el `código de tecla` para `ctrl` en su lugar: `keyup.17`.</p>
+<p class="tip">Tenga en cuenta que las teclas modificadoras son diferentes de las teclas normales y, cuando se usan con eventos `keyup`, deben presionarse cuando se emite el evento. En otras palabras, `keyup.ctrl` solo se activará si sueltas una tecla mientras mantienes presionada la tecla `Ctrl`. No se activará si suelta la tecla `ctrl` solo. Si desea tal comportamiento, use el `código de tecla` para `ctrl` en su lugar: `keyup.17`.</p>
 
 ### Modificador `.exact`
 
